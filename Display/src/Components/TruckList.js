@@ -14,7 +14,7 @@ function TruckList({trucks }) {
                 }
                 return newIndex;
             });
-        }, 2000); // Change this to the amount of time you want to wait between changes
+        }, 10000); // Change this to the amount of time you want to wait between changes
 
         return () => clearInterval(timer); // Clean up the interval on unmount
     }, [trucks.length]);
